@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description"
+        content="Does Your Large Multimodal Model Achieve Human-like Mathematical Reasoning?">
+        <meta name="keywords" content="MDI-Benchmark">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MDI-Benchmark</title>
+        <link rel="icon" href="./static/images/icon.png">
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-PYVRSFMDRL');
+        </script>
+
+        <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+        <!--css file-->
+        <link rel="stylesheet" href="./static/css/bulma.min.css">
+        <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+        <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+        <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+        <link rel="stylesheet" href="./static/css/index.css">
+        <link rel="stylesheet" href="./static/css/leaderboard.css">
+        <!--html head icon-->
+        <link rel="icon" href="./static/images/icon.png">
+
+
+        <script type="text/javascript" src="./static/js/sort-table.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script defer src="./static/js/fontawesome.all.min.js"></script>
+        <script src="./static/js/bulma-carousel.min.js"></script>
+        <script src="./static/js/bulma-slider.min.js"></script>
+
+
+        <script src="./static/js/index.js"></script>
+        <script src="./static/js/leaderboard_button.js"></script>
+        <script src="./static/js/nav-side.js"></script>
+    </head>
+
+    <body>
+        <!--title section-->
+        <section>
+            <!--导航栏-->
+            <nav id = "begin nav" class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                  </a>
+                </div>
+              
+                <div class="navbar-menu">
+                  <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                      <a class="navbar-link">
+                        More Research
+                      </a>
+                      <div class="navbar-dropdown">
+                        <a class="navbar-item" href="https://we-math.github.io/">
+                            <b>We-Math</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+
+            <!--题目 作者等信息-->
+            <div class="hero" id="header-container">
+                <div class="hero-body">
+                  <div class="container is-max-desktop">
+                    <div class="columns is-centered">
+                      <div class="column has-text-centered">
+                        <!--main title-->
+                        <h1 class="title is-1 publication-title">
+                          <!--icon-->
+                          <!--缺一个icon-->
+                          <!-- <img src="static/images/icon.png" style="width:1em; vertical-align: middle" alt="Logo"/>  -->
+                          <span class="wemath" style="vertical-align: middle">Multi-Dimensional Insights</span>            
+                        </h1>
+                        <!--subtitle-->
+                        <h2 class="subtitle is-3 publication-subtitle">
+                          Benchmarking Real-World Personalization in Large Multimodal Models
+                          <!-- Does Your Large Multimodal Model <br> Achieve Human-like Mathematical Reasoning? -->
+                        </h2>
+              
+                        <!--author link-->
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                <a href="index.html" style="text-decoration: none; color: inherit;">Yifan Zhang*<sup style="color:#4B70F5;"><b>1</b></sup></a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="index.html" style="text-decoration: none; color: inherit;">Shanglin Lei*<sup style="color:#FF8F00"><b>2</b></sup></a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="index.html" style="text-decoration: none; color: inherit;">Runqi Qiao*<sup style="color:#4B70F5;"><b>1</b></sup></a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="index.html" style="text-decoration: none; color: inherit;">Zhuoma GongQue<sup style="color:#4B70F5;"><b>1</b></sup></a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="index.html" style="text-decoration: none; color: inherit;">Xiaoshuai Song<sup style="color:#4B70F5;"><b>1</b></sup></a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="index.html" style="text-decoration: none; color: inherit;">Guanting Dong<sup style="color:#4B70F5;"><b>1</b></sup></a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="index.html" style="text-decoration: none; color: inherit;">Qiuna Tan<sup style="color:#4B70F5;"><b>1</b></sup></a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="index.html" style="text-decoration: none; color: inherit;">Zhe Wei<sup style="color:#4B70F5;"><b>1</b></sup></a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="index.html" style="text-decoration: none; color: inherit;">Peiqing Yang<sup style="color:#4B70F5;"><b>1</b></sup></a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="index.html" style="text-decoration: none; color: inherit;">Xiaofei Wang<sup style="color:#4B70F5;"><b>1</b></sup></a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="index.html" style="text-decoration: none; color: inherit;">Honggang Zhang†<sup style="color:#4B70F5;"><b>1</b></sup></a>,
+                            </span>
+                        </div>
+                        
+                        <!--author institution-->
+                        <div class="is-size-5 publication-authors">
+                          <span class="author-block"><sup style="color:#4B70F5;"><b>1</b></sup>Beijing University of Posts and Telecommunications,</span>
+                          <span class="author-block"><sup style="color:#FF8F00"><b>2</b></sup>Huazhong University of Science and Technology</span>
+                        </div>
+                        
+                        <br>
+              
+                        <!--equal contribution-->
+                        <div class="is-size-5 publication-authors">
+                          <span class="author-block">*Equal contribution</span><br>
+                          <span class="author-block">†Corresponding author</span>
+                        </div>
+              
+                        <!--links-->
+                        <div class="button-container">
+                            <a href="https://arxiv.org/abs/2402.03310" class="link-button" target="_blank">
+                                <span class="icon is-small">
+                                    <i class="ai ai-arxiv"></i>
+                                </span>
+                                arXiv
+                            </a>
+                            
+                            <a href="https://github.com/VIRL-Platform/VIRL" class="link-button" target="_blank">
+                                <span class="icon is-small">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                                <span>Code</span>
+                            </a>
+    
+                            <a href="https://huggingface.co/datasets/We-Math/We-Math" class="link-button" target="_blank">
+                                <span class="icon is-small">
+                                    <p style="font-size:16px">🤗</p>
+                                </span>
+                                Dataset
+                            </a>
+    
+                            <a href="#leaderboard" class="link-button" target="_blank">
+                                <span class="icon is-small">
+                                <p style="font-size:16px">🏆</p>
+                                </span>
+                                Leaderboard
+                            </a>
+    
+                            <a href="#example" class="link-button" target="_blank">
+                                <span class="icon is-small">
+                                    <i class="fas fa-book"></i>
+                                </span>
+                                Example
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+        </section>
+
+        
+        <!--分割节-->
+        <section class="hero is-light is-small">
+            <div class="hero-body has-text-centered">
+              <h1 class="title is-1 wemath">
+                <!-- <img src="static/images/icon.png" style="width:1em;vertical-align: middle" alt="Logo"/> -->
+                <span class="wemath" style="vertical-align: middle">MDI Benchmark</span>
+              </h1>
+            </div>
+        </section>
+
+
+
+        <!--artical section-->
+        <section>
+            <!--这部分之后再修改 一个是修改图像 一个是修改css名称 还有修改布局格式 让这个边栏更宽一些-->
+            <!--一个类别代表一种颜色 6个类别就是六个颜色-->
+            <!--修改图像-->
+            <div class="nav-side" id="nav-side">
+                <a class="nav-link" href="#top" style="opacity: 0.7">
+                    <div style="margin: 8px 0px; text-align: center">
+                        <span style="font-size: 30px;">&#128285;</span>
+                    </div>
+                </a>
+                <hr style="display: block; margin: auto;">
+                <div class="intro-color">
+                    <a class="nav-link" href="#intro"><img src="static/images/avatars/intro.png" title="Introduction">
+                    </a>
+                </div>
+                <hr style="display: block; margin: auto;">
+                <div class="arc-color">
+                    <a class="nav-link" href="#arc"><img src="static/images/avatars/arc.png" title="Architecture">
+                    </a>
+                </div>
+                <hr style="display: block; margin: auto;">
+                <div class="edu-color">
+                    <a class="nav-link" href="#edu"><img src="static/images/avatars/edu.png" title="Education">
+                    </a>
+                </div>
+                <hr style="display: block; margin: auto;">
+                <div class="house-color">
+                    <a class="nav-link" href="#house"><img src="static/images/avatars/house.png" title="Housework">
+                    </a>
+                </div>
+                <hr style="display: block; margin: auto;">
+                <div class="social-color">
+                    <a class="nav-link" href="#social"><img src="static/images/avatars/social.png" title="Social Service">
+                    </a>
+                </div>
+                <hr style="display: block; margin: auto;">
+                <div class="sport-color">
+                    <a class="nav-link" href="#sport"><img src="static/images/avatars/sports.png" title="Sports">
+                    </a>
+                </div>
+                <hr style="display: block; margin: auto;">
+                <div class="trans-color">
+                    <a class="nav-link" href="#trans"><img src="static/images/avatars/trans.png" title="Transport">
+                    </a>
+                </div>
+                <!-- 后续的相关内容 -->
+                <hr style="display: block; margin: auto;">
+                <div class="leaderboard-color">
+                    <a class="nav-link" href="#leaderboard"><img src="static/images/avatars/trophy.png" title="Leaderboard">
+                    </a>
+                </div>
+                <hr style="display: block; margin: auto;">
+                <div class="example-color">
+                    <a class="nav-link" href="#example"><img src="static/images/avatars/example.png" title="Example">
+                    </a>
+                </div>
+            </div>
+
+            <br><br>
+
+            <!--如果插入图像这样操作-->
+            
+            <div class="hero teaser">
+                <div class="container is-max-desktop">
+                      <div class="content has-text-centered">
+                        <img src="static/images/fig1.png" width="100%"/>
+                        <p>
+                          example.
+                        </p>
+                      </div>
+                  </div>
+                </div>
+            </div> 
+           
+
+            <!-- 整个文章的简要介绍 intro还没有写-->
+            <div id="intro">
+                <div class="container">
+                  <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                      <h2 class="title is-3">Introduction</h2>
+                      <div class="content has-text-justified">
+                        <p>Inspired by human-like mathematical reasoning, we introduce <span class="wemath">We-Math</span>, 
+                           the first benchmark specifically designed to explore the problem-solving principles beyond the end-to-end performance. 
+                        </p>
+              
+                        <p>
+                          We meticulously collect and categorize <b>6.5K</b> visual math problems, 
+                          spanning <b>67</b> hierarchical knowledge concepts and <b>5</b> layers of knowledge granularity. 
+                          We firstly decompose composite problems into sub-problems according to the required knowledge concepts and introduce a novel four-dimensional metric, 
+                          namely <b>Insufficient Knowledge (IK)</b>, <b>Inadequate Generalization (IG)</b>, <b>Complete Mastery (CM)</b>, and <b>Rote Memorization (RM)</b> to hierarchically assess inherent issues in LMMs' reasoning process.
+                        </p>
+                          
+                        <p>
+                          With <span class="wemath">We-Math</span>, we conduct a thorough evaluation of existing LMMs
+                          in visual mathematical reasoning and reveal a negative correlation between solving
+                          step and problem-specific performance. We confirm the <b>IK</b> issue of LMMs can
+                          be effectively improved via knowledge augmentation strategy. More notably, the
+                          primary challenge of <b>GPT-4o</b> has significantly transitioned from <b>IK</b> to <b>IG</b>, establishing 
+                          it as the first LMM advancing towards the knowledge generalization stage.
+                          In contrast, other LMMs exhibit a marked inclination towards <b>Rote Memorization</b>
+                          they correctly solve composite problems involving multiple knowledge concepts,
+                          yet fail in answering sub-problems. 
+                        </p>
+                        <p>  
+                        We anticipate that <span class="wemath">We-Math</span> will open new
+                          pathways for advancements in visual mathematical reasoning for LMMs.
+                        </p>
+                      </div>
+                      <br><br>
+                      <div class="content has-text-centered">
+                        <img src="static/images/fig1-3_res.png" width="100%"/>
+                        <p>
+                          Overview of LMMs' performances on <span class="wemath"> We-Math</span>. Figures from left to right illustrates the
+                          (1) accuracy of different LMMs on various problem-solving steps, (2) the performance in different
+                          visual mathematics categories and (3) the result in knowledge based reasoning evaluation.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <br>
+
+            <!-- 这个地方开始对每一个类进行展示 -->
+            <!-- 每一个类一个视频 来显示我们的应用场景 靠剪辑来进行实现 -->
+            <!-- 重点要体现出年龄分段 与导航栏中的内容相呼应-->
+            <!--这个分节看是否需要-->
+            <div class="hero is-light is-small">
+                <div class="hero-body has-text-centered">
+                  <h1 class="title is-1 wemath">
+                    <!-- <img src="static/images/icon.png" style="width:1em;vertical-align: middle" alt="Logo"/> -->
+                    6 Scenario
+                  </h1>
+                </div>
+            </div>
+
+
+            <!--图像展示动画-->
+            <!-- 先添加 hover的悬浮图像-->
+            <div>
+                <div class="container">
+                    <div class="columns is-centered has-text-centered m-6">
+                        <div class="column is-four-fifths">
+                            <h2 class="title is-3">Overview</h2>
+                            <!--当需要添加内容时 用下面注释掉的部分-->
+                            <div class="content has-text-justified">
+                            <!--overview of benchmark-->
+                            <!-- <p>
+                                Different from existing benchmarks,
+                                <span class="wemath">We-Math</span> is constructed around textbook knowledge units, 
+                                decomposing composite problem solutions into sub-problems based on the knowledge concepts.<br>
+                                <b>(1) Hierarchical Knowledge Structure.</b> Strictly adheres to the knowledge presented in mathematics textbooks, 
+                                featuring a rigorous hierarchical and multi-category architecture. It
+                                ensures the independence of knowledge concepts within the same level, while establishing logical
+                                relationships among concepts at different hierarchical levels.<br>
+                                <b>(2) Knowledge based Reasoning Evaluation.</b> To explore how LMMs solve
+                                problems. Drawing upon that humans tackle problems incrementally by leveraging fundamental
+                                knowledge concepts, we break down complex mathematical problems into more manageable sub105
+                                problems. Furthermore, we employ diverse measurement dimensions for meticulous evaluations.<br>
+                                <b>(3) Knowledge Concept Augmentation.</b> To alleviate the inherent issues during the problem-solving
+                                process, we heuristically introduce descriptions for <b>67 knowledge concepts</b> from Wikipedia and 
+                                textbooks, thereby providing essential knowledge support for the reasoning processes of LMMs.
+                            </p> -->
+                            <!--carousel-->
+                            <!-- <div id="overview-carousel" class="carousel results-carousel">
+                                <div class="box m-5">
+                                <div class="content has-text-centered">
+                                    <img src="static/images/step_2.png" alt="algebraic reasoning" width="90%"/>
+                                    <p> The pipeline of knowledge-based data decomposition (an example of a two-step problem in <span class="wemath" style="vertical-align: middle">We-Math</span>).</p>
+                                </div>
+                                </div>
+                                <div class="box m-5">
+                                <div class="content has-text-centered">
+                                    <img src="static/images/step_3.png" alt="arithmetic reasoning" width="90%"/>
+                                    <p> The pipeline of knowledge-based data decomposition (an example of a three-step problem in <span class="wemath" style="vertical-align: middle">We-Math</span>). </p>
+                                </div>
+                                </div>
+                            </div> -->
+                            </div>
+
+                            <!--按钮内容-->
+                            <!--修改这里的话 要跟着修改后面的id-->
+                            <!--在css中搜索 avater img hover 之后把每一格图像浮起的边框颜色进行修改-->
+                            <div class="avatar-row figure">
+                                <div class="avatar" onmouseover="showTakeaway('takeaway-peng')">
+                                    <a href="#arc">
+                                        <img src="static/images/avatars/arc.png" alt="Route optimizer Peng">
+                                    </a>
+                                    <figcaption>Architecture</figcaption>
+                                </div>
+                                <div class="avatar">
+                                    <a href="#edu" onmouseover="showTakeaway('takeaway-aria')">
+                                        <img src="static/images/avatars/edu.png" alt="Place recommender">
+                                    </a>
+                                    <figcaption>Education</figcaption>
+                                </div>
+                                <div class="avatar">
+                                    <a href="#house" onmouseover="showTakeaway('takeaway-vivek')">
+                                    <img src="static/images/avatars/house.png" alt="Estate recommender">
+                                    </a>
+                                    <figcaption>Housework</figcaption>
+                                </div>
+                                <div class="avatar">
+                                    <a href="#social" onmouseover="showTakeaway('takeaway-rx-399')">
+                                    <img src="static/images/avatars/social.png" alt="Robot RX-399">
+                                    </a>
+                                    <figcaption>Social Service</figcaption>
+                                </div>
+                                <div class="avatar">
+                                    <a href="#sport" onmouseover="showTakeaway('takeaway-imani')">
+                                    <img src="static/images/avatars/sports.png" alt="Urban planner">
+                                    </a>
+                                    <figcaption>Sport</figcaption>
+                                </div>
+                                <div class="avatar">
+                                    <a href="#trans" onmouseover="showTakeaway('takeaway-hiro')">
+                                    <img src="static/images/avatars/trans.png" alt="Intentional explorer">
+                                    </a>
+                                    <figcaption>Transport</figcaption>
+                                </div>
+                            </div>
+
+                            <!--文本框中显示的内容 对六个场景做一个简单的描述 内容暂时还没有加-->
+                            <div class="exemplar-takeaways">
+                                <div class="takeaway-card" id="takeaway-peng">
+                                    <div class="takeaway-head">
+                                        <span>Architecture</span>
+                                        <div class="takeaway-tags">
+                                            <img src="static/images/tags/geo.png">
+                                        </div>
+                                    </div>
+                                    <p class="takeaway-content">
+                                        V-<i>IRL</i> instantiates agents with real geospatial information, and enables useful tasks like route optimization.
+                                    </p>
+                                </div>
+                                <div class="takeaway-card" id="takeaway-aria">
+                                    <div class="takeaway-head">
+                                        <span>Education</span>
+                                        <div class="takeaway-tags">
+                                            <img src="static/images/tags/geo.png">
+                                            <img src="static/images/tags/lm.png">
+                                        </div>
+                                    </div>
+                                    <p class="takeaway-content">
+                                        V-<i>IRL</i> exposes rich real-world information to agents that they can use for real-world tasks.
+                                    </p>
+                                </div>
+                                <div class="takeaway-card" id="takeaway-vivek">
+                                    <div class="takeaway-head">
+                                        <span>Housework</span>
+                                        <div class="takeaway-tags">
+                                            <img src="static/images/tags/geo.png">
+                                            <img src="static/images/tags/lm.png">
+                                        </div>
+                                    </div>
+                                    <p class="takeaway-content">
+                                        Grounded in geographic coordinates, V-<i>IRL</i> agents can leverage arbitrary real-world information via APIs.
+                                    </p>
+                                </div>
+                                <div class="takeaway-card" id="takeaway-rx-399">
+                                    <div class="takeaway-head">
+                                        <span>Social Service</span>
+                                        <div class="takeaway-tags">
+                                            <img src="static/images/tags/geo.png">
+                                            <img src="static/images/tags/cv.png">
+                                        </div>
+                                    </div>
+                                    <p class="takeaway-content">
+                                        V-<i>IRL</i> agents can use perceptual input to understand and interact with their environment.
+                                    </p>
+                                </div>
+                                <div class="takeaway-card" id="takeaway-imani">
+                                    <div class="takeaway-head">
+                                        <span>Sport</span>
+                                        <div class="takeaway-tags">
+                                            <img src="static/images/tags/geo.png">
+                                            <img src="static/images/tags/cv.png">
+                                        </div>
+                                    </div>
+                                    <p class="takeaway-content">
+                                        V-<i>IRL</i> enables realistic open-world applications requiring vast geospatial and first-person visual information.
+                                    </p>
+                                </div>
+                                <div class="takeaway-card" id="takeaway-hiro">
+                                    <div class="takeaway-head">
+                                        <span>Transport</span>
+                                        <div class="takeaway-tags">
+                                            <img src="static/images/tags/geo.png">
+                                            <img src="static/images/tags/lm.png">
+                                            <img src="static/images/tags/cv.png">
+                                        </div>
+                                    </div>
+                                    <p class="takeaway-content">
+                                        V-<i>IRL</i> agents can utilize visual detectors, VLMs and LLMs to iteratively perceive, decide, and interact in the environment.
+                                    </p>
+                                </div>
+                                <div class="takeaway-card" id="takeaway-ling">
+                                    <div class="takeaway-head">
+                                        <span>Ling: Takeaway</span>
+                                        <div class="takeaway-tags">
+                                            <img src="static/img/tags/geo.png">
+                                            <img src="static/img/tags/lm.png">
+                                            <img src="static/img/tags/cv.png">
+                                            <img src="static/img/tags/col.png">
+                                        </div>
+                                    </div>
+                                    <p class="takeaway-content">
+                                        V-<i>IRL</i> agents can collaborate to solve complex tasks that are beyond their individual expertise.
+                                    </p>
+                                </div>
+                                <div class="takeaway-card" id="takeaway-diego">
+                                    <div class="takeaway-head">
+                                        <span>Diego: Takeaway</span>
+                                        <div class="takeaway-tags">
+                                            <img src="static/img/tags/geo.png">
+                                            <img src="static/img/tags/lm.png">
+                                            <img src="static/img/tags/cv.png">
+                                            <img src="static/img/tags/col.png">
+                                        </div>
+                                    </div>
+                                    <p class="takeaway-content">
+                                        V-<i>IRL</i> agents can collaborate with users to solve complex tasks that require understanding the user's internal state.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--后续只要往这里面加东西就行了 大体按照we-math的格式 小的按照index.css中新加入的进行修改-->
+
+            <!--六个类别进行展示 链接到这里 在每一个的第二个class中修改颜色 都是自动播放的-->
+            <div id="arc">
+                <div class="container">
+                    <div class="columns is-centered has-text-centered m-6">
+                        <div class="column is-four-fifths">
+                            <h2 class="title is-3">Architecture</h2>
+                            <video poster="" id="arc-video" autoplay controls muted loop playsinline height="100%">
+                                <source src="static/videos/arc.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+
+            <div id="edu">
+                <div class="container">
+                    <div class="columns is-centered has-text-centered m-6">
+                        <div class="column is-four-fifths">
+                            <h2 class="title is-3">Education</h2>
+                            <video poster="" id="edu-video" autoplay controls muted loop playsinline height="100%">
+                                <source src="static/videos/edu.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="house">
+                <div class="container">
+                    <div class="columns is-centered has-text-centered m-6">
+                        <div class="column is-four-fifths">
+                            <h2 class="title is-3">Housework</h2>
+                            <video poster="" id="house-video" autoplay controls muted loop playsinline height="100%">
+                                <source src="static/videos/house.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="social">
+                <div class="container">
+                    <div class="columns is-centered has-text-centered m-6">
+                        <div class="column is-four-fifths">
+                            <h2 class="title is-3">Social Service</h2>
+                            <video poster="" id="social-video" autoplay controls muted loop playsinline height="100%">
+                                <source src="static/videos/social.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sport">
+                <div class="container">
+                    <div class="columns is-centered has-text-centered m-6">
+                        <div class="column is-four-fifths">
+                            <h2 class="title is-3">Sport</h2>
+                            <video poster="" id="sport-video" autoplay controls muted loop playsinline height="100%">
+                                <source src="static/videos/sport.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="trans">
+                <div class="container">
+                    <div class="columns is-centered has-text-centered m-6">
+                        <div class="column is-four-fifths">
+                            <h2 class="title is-3">Transport</h2>
+                            <video poster="" id="trans-video" autoplay controls muted loop playsinline height="100%">
+                                <source src="static/videos/trans.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- bibtex -->
+        <section class="section" id="BibTeX">
+            <div class="container is-max-desktop content">
+              <h2 class="title">BibTeX</h2>
+              <pre><code>@misc{qiao2024wemathdoeslargemultimodal,
+                title={We-Math: Does Your Large Multimodal Model Achieve Human-like Mathematical Reasoning?}, 
+                author={Runqi Qiao and Qiuna Tan and Guanting Dong and Minhui Wu and Chong Sun and Xiaoshuai Song and Zhuoma GongQue and Shanglin Lei and Zhe Wei and Miaoxuan Zhang and Runfeng Qiao and Yifan Zhang and Xiao Zong and Yida Xu and Muxi Diao and Zhimin Bao and Chen Li and Honggang Zhang},
+                year={2024},
+                eprint={2407.01284},
+                archivePrefix={arXiv},
+                primaryClass={cs.AI},
+                url={https://arxiv.org/abs/2407.01284}, 
+          }</code></pre>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="columns is-centered">
+              <div class="column is-8">
+                <div class="content">
+                  <p>
+                    This website is adapted from <a href="https://nerfies.github.io/">Nerfies</a> and <a href="https://mathvista.github.io/">MathVista</a>, licensed under a <a rel="license"
+                                                        href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                    Commons Attribution-ShareAlike 4.0 International License</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+        </footer>
+        
+
+
+    </body>
+</html>
