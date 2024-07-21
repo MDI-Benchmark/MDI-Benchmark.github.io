@@ -792,6 +792,7 @@ aside th:first-child, aside td:first-child {
 
 figcaption {
     font-size: 1em;
+    /* font-size: 10px; */
 }
 
 figcaption .table-caption {
@@ -1089,7 +1090,7 @@ aside blockquote {
 }
 
 
-.avatar-row {
+.scene-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1098,21 +1099,13 @@ aside blockquote {
   margin: 20px;
 }
 
-.avatar {
+
+.scene {
   text-align: center;
 }
 
 
-/* .avatar img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 2px solid #ccc;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-} */
-
-.avatar img {
+.scene img {
   width: 100px; 
   height: 100px;
   border: 2px solid #ccc;
@@ -1120,15 +1113,36 @@ aside blockquote {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-.avatar img:hover {
+.scene img:hover {
   transform: scale(1.1);
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
-  /* background-color: #f30e0e; */ /* 悬停的时候改变背景颜色*/
-  border-color: #3498db; /* 鼠标悬停时改变边框颜色 */
 }
 
-.avatar figcaption {
+.scene-arc img:hover {
+  background-color: #FFDE00; /* 鼠标悬停时改变边框颜色 */
+}
+
+.scene-edu img:hover {
+  background-color: #B9F5CA; /* 鼠标悬停时改变边框颜色 */
+}
+
+.scene-house img:hover {
+  background-color: #FFB18C; /* 鼠标悬停时改变边框颜色 */
+}
+
+.scene-social img:hover {
+  background-color: #FF619D; /* 鼠标悬停时改变边框颜色 */
+}
+
+.scene-sport img:hover {
+  background-color: #8EC2F9; /* 鼠标悬停时改变边框颜色 */
+}
+
+.scene-trans img:hover {
+  background-color: #A4BDD2; /* 鼠标悬停时改变边框颜色 */
+}
+
+.scene figcaption {
   /* display: inline-block; */
   /* margin-top: 8px; */
   margin-left: auto;
@@ -1146,6 +1160,7 @@ aside blockquote {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
 
 .left-aside-container {
   display: flex;
@@ -1281,28 +1296,27 @@ h2.text {
     height: auto;
 }
 
-/*两个颜色修改*/
-/*这个地方之后要改成自己的颜色*/
+/*nav部分的颜色修改*/
 .intro-color {
   background-color: #DD5746;
 }
 .arc-color {
-    background-color: #6FDCE3;
+    background-color: #FFDE00;
 }
 .edu-color {
-    background-color: #9CDBA6;
+    background-color: #B9F5CA;
 }
 .house-color {
-    background-color: #FFD3B6;
+    background-color: #FFB18C;
 }
 .social-color {
-    background-color: #FFC96F;
+    background-color: #FF619D;
 }
 .sport-color {
-  background-color: #B1AFFF;
+  background-color: #8EC2F9;
 }
 .trans-color {
-  background-color: #E0CCBE;
+  background-color: #A4BDD2;
 }
 .leaderboard-color {
   background-color: #ffc1c145;
@@ -1312,9 +1326,8 @@ h2.text {
 }
 
 
-/*这个地方的hover 颜色也要进行修改*/
-.arc-color:hover {
-    background-color: rgba(227, 242, 233, 0.9);
+/* .arc-color:hover {
+    background-color: #FFDE00;
 }
 .edu-color:hover {
     background-color: rgba(227, 237, 248, 0.9);
@@ -1336,7 +1349,7 @@ h2.text {
 }
 .example-color:hover {
   background-color: #9900ff2a;
-}
+} */
 
 div.nav-side a {
   border: none;
@@ -1379,7 +1392,7 @@ a.active-link {
   text-align: left;
   padding: 10px;
   padding-left: 15px;
-  background-color: rgb(113, 115, 148);
+  /* background-color: rgb(113, 115, 148); */
   border-radius: 15px 15px 0px 0px;
   line-height: 1.6;
   color: white;

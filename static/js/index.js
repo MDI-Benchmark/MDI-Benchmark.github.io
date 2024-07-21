@@ -124,7 +124,7 @@ $(document).ready(function() {
 
 
 
-// 测试函数
+// 展示卡片内容
 function showTakeaway(id) {
     // First hide all takeaways
     document.querySelectorAll('.exemplar-takeaways > .takeaway-card').forEach(function(takeaway) {

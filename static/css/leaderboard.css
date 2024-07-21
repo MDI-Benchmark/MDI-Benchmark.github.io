@@ -1,3 +1,5 @@
+/*对于表格内容的修改*/
+
 table {
     /*border: 1px solid black;*/
     width: 100%;
@@ -61,12 +63,16 @@ table#table1.js-sort-20 tbody tr td:nth-child(21){
 }
 
 /*change the form column color*/
-table#table1 tbody tr td:nth-child(n+5):nth-child(-n+9) {
+/* table#table1 tbody tr td:nth-child(n+5):nth-child(-n+9) {
     background-color: #FCF5F0;
 }
 
 table#table1 tbody tr td:nth-child(n+10):nth-child(-n+14) {
     background-color: #F1F5FA;
+} */
+
+#table1 tr:nth-child(even) {
+    background-color: #f5f5f5;
 }
 
 /*change hover color in tr*/
