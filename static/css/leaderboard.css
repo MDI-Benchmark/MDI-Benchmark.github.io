@@ -27,12 +27,11 @@ thead {
 
 
 .open-source {
-    /* background-color: #d4edda; 绿色背景，表示开源 */
-    color: #059212; /* 绿色文字 */
+    color: #059212; 
 }
 
 .close-source {
-    color: #C40C0C; /* 绿色文字 */
+    color: #C40C0C; 
 }
 
 
