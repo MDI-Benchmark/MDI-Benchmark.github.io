@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="description"
-        content="Does Your Large Multimodal Model Achieve Human-like Mathematical Reasoning?">
+        content="Benchmarking Real-World Personalization in Large Multimodal Models">
         <meta name="keywords" content="MDI-Benchmark">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>MDI-Benchmark</title>
-        <!--这个地方还是需要加一个icon-->
+        <!-- 这个地方还是需要加一个icon -->
         <link rel="icon" href="./static/images/icon.png">
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -51,7 +51,7 @@
     <body>
         <!--title section-->
         <section>
-            <!--导航栏-->
+            <!--navbar-->
             <nav id = "begin nav" class="navbar" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
                   <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -77,7 +77,7 @@
                 </div>
             </nav>
 
-            <!--题目 作者等信息-->
+            <!--author and title-->
             <div class="hero" id="header-container">
                 <div class="hero-body">
                     <div class="container is-max-desktop">
@@ -86,9 +86,8 @@
                             <!--main title-->
                                 <h1 class="title is-1 publication-title">
                                 <!--icon-->
-                                <!--缺一个icon-->
-                                <!-- <img src="static/images/icon.png" style="width:1em; vertical-align: middle" alt="Logo"/>  -->
-                                <span class="wemath" style="vertical-align: middle">Multi-Dimensional Insights</span>            
+                                <img src="static/images/icon.png" style="width:1.5em; vertical-align: middle" alt="Logo"/>
+                                <span class="mdi" style="vertical-align: middle">Multi-Dimensional Insights</span>            
                                 </h1>
                                 <!--subtitle-->
                                 <h2 class="subtitle is-3 publication-subtitle">
@@ -149,21 +148,21 @@
               
                                 <!--links-->
                                 <div class="button-container">
-                                    <a href="https://arxiv.org/abs/2402.03310" class="link-button" target="_blank">
+                                    <a href="" class="link-button" target="_blank">
                                         <span class="icon is-small">
                                             <i class="ai ai-arxiv"></i>
                                         </span>
                                         arXiv
                                     </a>
                                     
-                                    <a href="https://github.com/VIRL-Platform/VIRL" class="link-button" target="_blank">
+                                    <a href="https://github.com/MDI-Benchmark/MDI-Benchmark" class="link-button" target="_blank">
                                         <span class="icon is-small">
                                             <i class="fab fa-github"></i>
                                         </span>
                                         <span>Code</span>
                                     </a>
             
-                                    <a href="https://huggingface.co/datasets/We-Math/We-Math" class="link-button" target="_blank">
+                                    <a href="" class="link-button" target="_blank">
                                         <span class="icon is-small">
                                             <p style="font-size:16px">🤗</p>
                                         </span>
@@ -176,7 +175,7 @@
                                         </span>
                                         Leaderboard
                                     </a>
-                                    <!-- 这里的css需要修改 颜色之后看 而且按钮有问题-->
+                                    
                                     <a href="#examples" class="link-button">
                                         <span class="icon is-small">
                                             <i class="fas fa-book"></i>
@@ -187,28 +186,28 @@
                             </div>
                         </div>
                         
-                        <!--图像总览-->
+                        <!--fig 1-->
                         <div class="container is-max-desktop">
-                            <div class="content has-text-centered">
+                            <div class="content has-text-centered" id="overview">
                               <img src="static/images/fig2.png" width="100%"/>
                               <p>
-                                The overview of the <span class="wemath">MDI-Benchmark</span>'s six scenarios.
+                                An overview of the six scenarios of <span class="mdi">MDI-Benchmark</span> in human life, 
+                                each of which contains the needs of different age groups.
                               </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
         
 
-        <!--分割节-->
+        <!--MDI-Benchmark-->
         <section class="hero is-light is-small">
             <div class="hero-body has-text-centered">
-              <h1 class="title is-1 wemath">
-                <!-- <img src="static/images/icon.png" style="width:1em;vertical-align: middle" alt="Logo"/> -->
-                <span class="wemath" style="vertical-align: middle">MDI Benchmark</span>
+              <h1 class="title is-1 mdi">
+                <img src="static/images/icon.png" style="width:1.5em;vertical-align: middle" alt="Logo"/>
+                <span class="mdi" style="vertical-align: middle">MDI-Benchmark</span>
               </h1>
             </div>
         </section>
@@ -216,9 +215,7 @@
 
         <!--artical section-->
         <section>
-            <!--这部分之后再修改 一个是修改图像 一个是修改css名称 还有修改布局格式 让这个边栏更宽一些-->
-            <!--一个类别代表一种颜色 6个类别就是六个颜色-->
-            <!--修改图像-->
+            <!-- nav-side -->
             <div class="nav-side" id="nav-side">
                 <a class="nav-link" href="#top" style="opacity: 0.7">
                     <div style="margin: 8px 0px; text-align: center">
@@ -260,7 +257,7 @@
                     <a class="nav-link" href="#trans"><img src="static/images/scenes/trans.png" title="Transport">
                     </a>
                 </div>
-                <!-- 后续的相关内容 -->
+                <!--leaderboard and example-->
                 <hr style="display: block; margin: auto;">
                 <div class="leaderboard-color">
                     <a class="nav-link" href="#leaderboard"><img src="static/images/scenes/trophy.png" title="Leaderboard">
@@ -273,7 +270,7 @@
                 </div>
             </div>
 
-            <br><br>
+            <br>
            
             <!-- intro-->
             <div id="intro">
@@ -282,162 +279,122 @@
                     <div class="column is-four-fifths">
                       <h2 class="title is-3">Introduction</h2>
                         <div class="content has-text-justified">
-                            <p>
+                            <p style="font-size: 16px;">
                                 Current benchmarks focus primarily on technical metrics for specific tasks, 
                                 neglecting two critical research questions: 
                             </p>
-              
-                        
-                            <p>
+
+                            <p style="font-size: 16px;">
                                 <i><b>Q1</b></i>: Can these LMMs truly truly align with the actual needs of humans in real-world scenarios?
                             </p>
 
-                            <p>
+                            <p style="font-size: 16px;">
                                 <i><b>Q2</b></i>: Can these LMMs subsequently address the diverse needs of distinct groups?
                             </p>
                           
-                            <p>
+                            <p style="font-size: 16px;">
                                 To tackle these challenges, 
                                 we introduce a novel MDI-benchmark, which encompasses various real-world scenarios, 
                                 different problem complexities, and diverse age groups. 
                                 In detail, MDI-benchmark consists of more than <b>500</b> real-world images and <b>1.2k</b> human-posed questions. 
-                                it covers <b>6</b> major scenarios of human life: Architecture, Education, Housework, Social Services, Sport, and Transport.
+                                it covers <b>6</b> major scenarios of human life: 
+                                <b>Architecture</b>, <b>Education</b>, <b>Housework</b>, <b>Social Services</b>, <b>Sport</b>, and <b>Transport</b>.
                             </p>
                         
-                            <p>  
+                            <p style="font-size: 16px;">  
                                 We hope our research will advance the application of multimodal large models in 
                                 real-world scenarios and pave the way for the development of multi-dimensional customization.
                             </p>
                         </div>
-                      
-                      
-                        <!-- <br><br>
                         <div class="content has-text-centered">
-                            <img src="static/images/fig1-3_res.png" width="100%"/>
-                            <p>
-                            Overview of LMMs' performances on <span class="wemath"> We-Math</span>. Figures from left to right illustrates the
-                            (1) accuracy of different LMMs on various problem-solving steps, (2) the performance in different
-                            visual mathematics categories and (3) the result in knowledge based reasoning evaluation.
-                            </p>
-                        </div> -->
+                          <img src="static/images/fig1.png" width="100%"/>
+                          <p>
+                            The <span class="mdi">MDI-benchmark</span> comprises six real-world multimodal scenarios, 
+                            each comprising three sub-domains.
+                        </p>
+                        </div>
                     </div>
                   </div>
                 </div>
             </div>
-            <br><br>
-            <div class="hero teaser">
-                <div class="container is-max-desktop">
-                      <div class="content has-text-centered">
-                        <img src="static/images/fig1.png" width="100%"/>
-                        <p>
-                            The <span class="wemath">MDI-benchmark</span> comprises six real-world multimodal scenarios, each comprising three sub-domains.
-                        </p>
-                      </div>
-                  </div>
-                </div>
-            </div> 
             <br>
 
-            <!-- 这个地方开始对每一个类进行展示 -->
-            <!-- 每一个类一个视频 来显示我们的应用场景 靠剪辑来进行实现 -->
-            <!-- 重点要体现出年龄分段 与导航栏中的内容相呼应-->
-            <!--这个分节看是否需要-->
+            
             <div class="hero is-light is-small">
                 <div class="hero-body has-text-centered">
-                  <h1 class="title is-1 wemath">
-                    <!-- <img src="static/images/icon.png" style="width:1em;vertical-align: middle" alt="Logo"/> -->
-                    6 Scenario
+                  <h1 class="title is-1 mdi">
+                    Real-life Scenarios
                   </h1>
                 </div>
             </div>
+            <br>
 
 
-            <!--图像展示动画-->
-            <!-- 先添加 hover的悬浮图像-->
+            <!-- hover -->
             <div>
                 <div class="container">
-                    <div class="columns is-centered has-text-centered m-6">
+                    <div class="columns is-centered has-text-centered">
                         <div class="column is-four-fifths">
                             <h2 class="title is-3">Overview</h2>
-                            <!--当需要添加内容时 用下面注释掉的部分-->
                             <div class="content has-text-justified">
                             <!--overview of benchmark-->
-                            <!-- <p>
-                                Different from existing benchmarks,
-                                <span class="wemath">We-Math</span> is constructed around textbook knowledge units, 
-                                decomposing composite problem solutions into sub-problems based on the knowledge concepts.<br>
-                                <b>(1) Hierarchical Knowledge Structure.</b> Strictly adheres to the knowledge presented in mathematics textbooks, 
-                                featuring a rigorous hierarchical and multi-category architecture. It
-                                ensures the independence of knowledge concepts within the same level, while establishing logical
-                                relationships among concepts at different hierarchical levels.<br>
-                                <b>(2) Knowledge based Reasoning Evaluation.</b> To explore how LMMs solve
-                                problems. Drawing upon that humans tackle problems incrementally by leveraging fundamental
-                                knowledge concepts, we break down complex mathematical problems into more manageable sub105
-                                problems. Furthermore, we employ diverse measurement dimensions for meticulous evaluations.<br>
-                                <b>(3) Knowledge Concept Augmentation.</b> To alleviate the inherent issues during the problem-solving
-                                process, we heuristically introduce descriptions for <b>67 knowledge concepts</b> from Wikipedia and 
-                                textbooks, thereby providing essential knowledge support for the reasoning processes of LMMs.
-                            </p> -->
-                            <!--carousel-->
-                            <!-- <div id="overview-carousel" class="carousel results-carousel">
-                                <div class="box m-5">
-                                <div class="content has-text-centered">
-                                    <img src="static/images/step_2.png" alt="algebraic reasoning" width="90%"/>
-                                    <p> The pipeline of knowledge-based data decomposition (an example of a two-step problem in <span class="wemath" style="vertical-align: middle">We-Math</span>).</p>
-                                </div>
-                                </div>
-                                <div class="box m-5">
-                                <div class="content has-text-centered">
-                                    <img src="static/images/step_3.png" alt="arithmetic reasoning" width="90%"/>
-                                    <p> The pipeline of knowledge-based data decomposition (an example of a three-step problem in <span class="wemath" style="vertical-align: middle">We-Math</span>). </p>
-                                </div>
-                                </div>
-                            </div> -->
+                            <p style="font-size: 16px;"> 
+                                The <sapn class="mdi">MDI-benchmark</sapn> sample design highlights the 
+                                <b>real-world complexity of information</b>, 
+                                <b>scene variability</b>, and <b>age differences</b>.
+                            </p>
+                            <p style="font-size: 16px;">
+                                People's information concerns often vary by scenario. 
+                                As shown in <a class="nav-link" href="#overview">Figure</a>, 
+                                a family buying a new house may focus on practical issues that are closely related to them, 
+                                such as kitchen type, garage capacity, and bedroom amenities.
+                                Spectators at sports events may concern themselves with game details, player achievements, and game progress.<br>
+                            <p style="font-size: 16px;">
+                                To address these differences, we design a unique <b>three-dimensional</b> hierarchical structure for the <sapn class="mdi">MDI-Benchmark</sapn>, 
+                                incorporating <b>scenarios</b>, <b>age</b>, and <b>problem complexity</b>. 
+                                This structure provides a comprehensive evaluation framework that not only 
+                                tests the model's basic problem-solving abilities 
+                                but also examines its adaptability to specific human contexts and scenarios. 
+                                This multi-level, multi-angle testing method aids in developing more intelligent AI systems aligned with user needs. 
+                            </p>
                             </div>
-
-                            <!--按钮内容-->
-                            <!--修改这里的话 要跟着修改后面的id-->
-                            <!--在css中搜索 avater img hover 之后把每一格图像浮起的边框颜色进行修改-->
+                            
+                            <br>
+                            <!--hover show card-->
                             <div class="scene-row figure">
                                 <div class="scene scene-arc" onmouseover="showTakeaway('takeaway-arc')">
                                     <a href="#arc">
                                         <img src="static/images/scenes/arc.png" alt="arc">
                                     </a>
-                                    <!-- <figcaption>Architecture</figcaption> -->
                                 </div>
                                 <div class="scene scene-edu">
                                     <a href="#edu" onmouseover="showTakeaway('takeaway-edu')">
                                         <img src="static/images/scenes/edu.png" alt="edu">
                                     </a>
-                                    <!-- <figcaption>Education</figcaption> -->
                                 </div>
                                 <div class="scene scene-house">
                                     <a href="#house" onmouseover="showTakeaway('takeaway-house')">
                                     <img src="static/images/scenes/house.png" alt="house">
                                     </a>
-                                    <!-- <figcaption>Housework</figcaption> -->
                                 </div>
                                 <div class="scene scene-social">
                                     <a href="#social" onmouseover="showTakeaway('takeaway-social')">
                                     <img src="static/images/scenes/social.png" alt="social">
                                     </a>
-                                    <!-- <figcaption>Social Service</figcaption> -->
                                 </div>
                                 <div class="scene scene-sport">
                                     <a href="#sport" onmouseover="showTakeaway('takeaway-sport')">
                                     <img src="static/images/scenes/sports.png" alt="aports">
                                     </a>
-                                    <!-- <figcaption>Sport</figcaption> -->
                                 </div>
                                 <div class="scene scene-trans">
                                     <a href="#trans" onmouseover="showTakeaway('takeaway-trans')">
                                     <img src="static/images/scenes/trans.png" alt="trans">
                                     </a>
-                                    <!-- <figcaption>Transport</figcaption> -->
                                 </div>
                             </div>
 
-                            <!--文本框中显示的内容 对六个场景做一个简单的描述 内容暂时还没有加-->
+                            <!--scenes content-->
                             <div class="exemplar-takeaways">
                                 <div class="takeaway-card" id="takeaway-arc">
                                     <div class="takeaway-head arc-color">
@@ -480,7 +437,8 @@
                                         <span style="color: black;"><b>Sport</b></span>
                                     </div>
                                     <p class="takeaway-content">
-                                        V-<i>IRL</i> enables realistic open-world applications requiring vast geospatial and first-person visual information.
+                                        It covers the physical activities that humans face in real life,
+                                        including the following three categories: <b>powerlifting</b>, <b>race</b> and <b>ball</b>.
                                     </p>
                                 </div>
                                 <div class="takeaway-card" id="takeaway-trans">
@@ -488,7 +446,8 @@
                                         <span style="color: black;"><b>Transport</b></span>
                                     </div>
                                     <p class="takeaway-content">
-                                        V-<i>IRL</i> agents can utilize visual detectors, VLMs and LLMs to iteratively perceive, decide, and interact in the environment.
+                                      It covers travel situations that humans face in real life,
+                                      including the following three categories: <b>signpost</b>, <b>rail transit</b> and <b>airport</b>.
                                     </p>
                                 </div>
                             </div>
@@ -497,9 +456,7 @@
                 </div>
             </div>
 
-            <!--后续只要往这里面加东西就行了 大体按照we-math的格式 小的按照index.css中新加入的进行修改-->
-
-            <!--六个类别进行展示 改为非自动播放了-->
+            <!--video show-->
             <div id="arc">
                 <div class="container">
                     <div class="columns is-centered has-text-centered m-6">
@@ -513,8 +470,6 @@
                     </div>
                 </div>
             </div>
-
-        
 
             <div id="edu">
                 <div class="container">
@@ -530,8 +485,6 @@
                 </div>
             </div>
 
-
-
             <div id="house">
                 <div class="container">
                     <div class="columns is-centered has-text-centered m-6">
@@ -545,8 +498,6 @@
                     </div>
                 </div>
             </div>
-
-
 
             <div id="social">
                 <div class="container">
@@ -589,13 +540,11 @@
                     </div>
                 </div>
             </div>
-
-
         </section>
         
 
 
-        <!--展示最后的结果-->
+        <!--Experiment Results-->
         <section class="hero is-light is-small">
             <div class="hero-body has-text-centered">
               <h1 class="title is-1 wemath">Experiment Results</h1>
@@ -1058,7 +1007,7 @@
 
 
 
-        <!--展示最后的结果-->
+        <!--Example-->
         <section class="hero is-light is-small">
             <div class="hero-body has-text-centered">
               <h1 class="title is-1 wemath">Example</h1>

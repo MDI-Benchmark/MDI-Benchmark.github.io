@@ -124,7 +124,7 @@ $(document).ready(function() {
 
 
 
-// 展示卡片内容
+// showcard
 function showTakeaway(id) {
     // First hide all takeaways
     document.querySelectorAll('.exemplar-takeaways > .takeaway-card').forEach(function(takeaway) {

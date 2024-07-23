@@ -163,8 +163,8 @@ body {
   border-radius: 5px;
 }
 
-/*wemath font*/
-.wemath {
+/*mdi font*/
+.mdi {
   font-variant: small-caps;
   font-weight: bold;
 }
@@ -276,7 +276,7 @@ body {
 }
 
 
-/*按钮颜色的修改*/
+/*button-container*/
 .button-container {
   margin-top: 20px; /* Add margin above the buttons */
   margin-bottom: 20px; /* Add margin below the buttons */
@@ -288,10 +288,11 @@ body {
   padding: 10px 20px; /* Increase tap area for touch screens */
 }
 
+
 .button-container a.link-button {
-  background-color: #FFF0CE; /* Yellow background */
-  color: #000; /* Black text */
-  border: 2px solid #ffc107; /* Orange border */
+  background-color: #373A40; /* background color*/
+  color: #fff; /* text color*/
+  border: 2px solid; /* border color*/
   border-radius: 25px; /* Rounded borders */
   padding: 10px 20px; /* Top and bottom padding, left and right padding */
   margin: 5px; /* Space between the buttons */
@@ -302,7 +303,7 @@ body {
 }
 
 .button-container a.link-button:hover {
-  background-color: #EAB682; /* Darker yellow background on hover */
+  background-color: #686D76; /* background on hover */
   color: #fff; /* White text on hover */
 }
 
@@ -1090,12 +1091,13 @@ aside blockquote {
 }
 
 
+/*change scene-card*/
 .scene-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 2%;
+  gap: 3%;
   margin: 20px;
 }
 
