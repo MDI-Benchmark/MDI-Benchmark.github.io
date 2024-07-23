@@ -20,8 +20,19 @@ td {
     border: 1px solid black;
 }
 
+
 thead {
     background: #ddd;
+}
+
+
+.open-source {
+    /* background-color: #d4edda; 绿色背景，表示开源 */
+    color: #059212; /* 绿色文字 */
+}
+
+.close-source {
+    color: #C40C0C; /* 绿色文字 */
 }
 
 
@@ -62,11 +73,12 @@ table#table1.js-sort-20 tbody tr td:nth-child(21){
     margin-bottom: 2em;
 }
 
-/*change the form column color*/
-/* table#table1 tbody tr td:nth-child(n+5):nth-child(-n+9) {
+/*change the form column color
+table#table1 tbody tr td:nth-child(n+5):nth-child(-n+9) {
     background-color: #FCF5F0;
-}
+}*/
 
+/*
 table#table1 tbody tr td:nth-child(n+10):nth-child(-n+14) {
     background-color: #F1F5FA;
 } */
@@ -77,7 +89,7 @@ table#table1 tbody tr td:nth-child(n+10):nth-child(-n+14) {
 
 /*change hover color in tr*/
 table#table1 tr:hover td{
-    background-color: #ddd !important;
+    background-color: #FFF1DB;
 }
 
 /*change hover color in td*/
@@ -173,7 +185,7 @@ table#table2.js-sort-21 tbody tr td:nth-child(22){
 
 /*table2 hover color*/
 #table2 tr:hover {
-    background-color: #ddd;
+    background-color: #FFF1DB;
 }
 
 

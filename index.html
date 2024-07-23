@@ -322,7 +322,7 @@
             <div class="hero is-light is-small">
                 <div class="hero-body has-text-centered">
                   <h1 class="title is-1 mdi">
-                    Real-life Scenarios
+                    Real-world Scenarios
                   </h1>
                 </div>
             </div>
@@ -555,11 +555,14 @@
             <div class="container">
               <div class="columns is-centered">
                 <div class="column is-full has-text-centered content">
-                  <h2 class="title is-3" id="leaderboard">Leaderboard on MDI-Benchmark (testmini)</h2>
+                  <h2 class="title is-3" id="leaderboard">Leaderboard on <span class="mdi">MDI-Benchmark</span> (testmini)</h2>
                   <!--change in leaderboard_button.js-->
                   <div class="content">
-                    <button id="toggleButton" onclick="changeButtonText()"><b style='font-size: larger;'>Level 1 Evaluation Leaderboard</b> (Click to Switch)</button>
-                    <p class="mt-3">Accuracy scores on the <b>testmini</b> subset (612 examples) of <span class="wemath">MDI-Benchmark</span>.
+                    <button id="toggleButton" onclick="changeButtonText()"><b style='font-size: larger;'>Level 1 Accuracy Leaderboard</b> (Click to Switch)</button>
+                    <p class="mt-3">
+                      Accuracy scores on the <b>testmini</b> subset (612 examples) of <span class="wemath">MDI-Benchmark</span>.<br>
+                      Among them, those marked by <span class="close-source">red</span> characters are closed-source models, 
+                      and those marked by <span class="open-source">green</span> characters are open source models.
                     </p>
                     <!--table name-->
                     <table id="table1" class="js-sort-table">
@@ -578,7 +581,7 @@
                       </tr>
                       <tr>
                         <td>1</td>
-                        <td><b>GPT-4o 🥇</b></td>
+                        <td class="close-source"><b>GPT-4o 🥇</b></td>
                         <td><a href="https://openai.com/index/hello-gpt-4o/" class="ext-link" style="font-size: 16px;">Link</a></td>
                         <td>2024-05</td>
                         <td><b>87.46%</b></td>
@@ -591,7 +594,7 @@
                       </tr>
                       <tr>
                         <td>2</td>
-                        <td><b>GPT-4V 🥈</b></td>
+                        <td class="close-source"><b>GPT-4V 🥈</b></td>
                         <td><a href="https://openai.com/contributions/gpt-4v/" class="ext-link" style="font-size: 16px;">Link</a></td>
                         <td>2024-04</td>
                         <td><b>87.46%</b></td>
@@ -604,7 +607,7 @@
                       </tr>
                       <tr>
                         <td>3</td>
-                        <td><b>Gemini 1.5 Pro 🥉</b></td>
+                        <td class="close-source"><b>Gemini 1.5 Pro 🥉</b></td>
                         <td><a href="https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf" class="ext-link" style="font-size: 16px;">Link</a></td>
                         <td>2024-05</td>
                         <td><b>82.32%</b></td>
@@ -617,7 +620,7 @@
                       </tr>
                       <tr>
                         <td>4</td>
-                        <td><b>LLaVA-NeXT-110B</b></td>
+                        <td class="open-source"><b>LLaVA-NeXT-110B</b></td>
                         <td><a href="https://huggingface.co/lmms-lab/llava-next-110b" class="ext-link" style="font-size: 16px;">Link</a></td>
                         <td>2024-05</td>
                         <td><b>79.10%</b></td>
@@ -630,7 +633,7 @@
                       </tr>
                       <tr>
                         <td>5</td>
-                        <td><b>LLaVA-NeXT-72B</b></td>
+                        <td class="open-source"><b>LLaVA-NeXT-72B</b></td>
                         <td><a href="https://huggingface.co/lmms-lab/llava-next-72b" class="ext-link" style="font-size: 16px;">Link</a></td>
                         <td>2024-04</td>
                         <td><b>76.21%</b></td>
@@ -643,7 +646,7 @@
                       </tr>
                       <tr>
                         <td>6</td>
-                        <td><b>MiniCPM-LLaMA3-V 2.5</b></td>
+                        <td class="open-source"><b>MiniCPM-LLaMA3-V 2.5</b></td>
                         <td><a href="https://huggingface.co/openbmb/MiniCPM-Llama3-V-2_5" class="ext-link" style="font-size: 16px;">Link</a></td>
                         <td>2024-05</td>
                         <td><b>72.67%</b></td>
@@ -656,7 +659,7 @@
                       </tr>
                       <tr>
                         <td>7</td>
-                        <td><b>DeepSeek-VL-7B</b></td>
+                        <td class="open-source"><b>DeepSeek-VL-7B</b></td>
                         <td><a href="https://huggingface.co/deepseek-ai/deepseek-vl-7b-chat" class="ext-link" style="font-size: 16px;">Link</a></td>
                         <td>2024-03</td>
                         <td><b>68.49%</b></td>
@@ -669,7 +672,7 @@
                       </tr>
                       <tr>
                         <td>8</td>
-                        <td><b>Phi3-Vision-4.2B</b></td>
+                        <td class="open-source"><b>Phi3-Vision-4.2B</b></td>
                         <td><a href="https://huggingface.co/microsoft/Phi-3-vision-128k-instruct" class="ext-link" style="font-size: 16px;">Link</a></td>
                         <td>2024-05</td>
                         <td><b>67.20%</b></td>
@@ -682,7 +685,7 @@
                       </tr>
                       <tr>
                         <td>9</td>
-                        <td><b>mPLUG-Owl2-7B</b></td>
+                        <td class="open-source"><b>mPLUG-Owl2-7B</b></td>
                         <td><a href="https://huggingface.co/MAGAer13/mplug-owl2-llama2-7b" class="ext-link" style="font-size: 16px;">Link</a></td>
                         <td>2023-10</td>
                         <td><b>64.63%</b></td>
@@ -695,7 +698,7 @@
                       </tr>
                       <tr>
                         <td>10</td>
-                        <td><b>CogVLM-chat</b></td>
+                        <td class="open-source"><b>CogVLM-chat</b></td>
                         <td><a href="https://huggingface.co/THUDM/cogvlm-chat-hf" class="ext-link" style="font-size: 16px;">Link</a></td>
                         <td>2023-11</td>
                         <td><b>60.77%</b></td>
@@ -708,7 +711,7 @@
                       </tr>
                       <tr>
                         <td>11</td>
-                        <td><b>DeepSeek-VL-1.3B</b></td>
+                        <td class="open-source"><b>DeepSeek-VL-1.3B</b></td>
                         <td><a href="https://huggingface.co/deepseek-ai/deepseek-vl-1.3b-base" class="ext-link" style="font-size: 16px;">Link</a></td>
                         <td>2024-03</td>
                         <td><b>58.20%</b></td>
@@ -721,7 +724,7 @@
                       </tr>
                       <tr>
                         <td>12</td>
-                        <td><b>Qwen-VL-Plus</b></td>
+                        <td class="close-source"><b>Qwen-VL-Plus</b></td>
                         <td><a href="https://github.com/QwenLM/Qwen-VL/tree/master" class="ext-link" style="font-size: 16px;">Link</a></td>
                         <td>2024-01</td>
                         <td><b>56.59%</b></td>
@@ -734,7 +737,7 @@
                       </tr>
                       <tr>
                         <td>13</td>
-                        <td><b>CogAgent-vqa</b></td>
+                        <td class="open-source"><b>CogAgent-vqa</b></td>
                         <td><a href="https://huggingface.co/THUDM/cogagent-vqa-hf" class="ext-link" style="font-size: 16px;">Link</a></td>
                         <td>2023-12</td>
                         <td><b>49.52%</b></td>
@@ -747,7 +750,7 @@
                       </tr>
                       <tr>
                         <td>14</td>
-                        <td><b>LLaVA-NeXT-7B</b></td>
+                        <td class="open-source"><b>LLaVA-NeXT-7B</b></td>
                         <td><a href="https://huggingface.co/liuhaotian/llava-v1.6-vicuna-7b" class="ext-link" style="font-size: 16px;">Link</a></td>
                         <td>2024-03</td>
                         <td><b>43.09%</b></td>
@@ -760,202 +763,201 @@
                       </tr>
                     </table>
                     <table id="table2" class="js-sort-table hidden">
-                        <tr>
-                            <td class="js-sort-number"><strong>#</strong></td>
-                            <td class="js-sort"><strong>Model</strong></td>
-                            <td class="js-sort"><strong>Source</strong></td>
-                            <td class="js-sort-date"><strong>Date</strong></td>
-                            <td class="js-sort-number"><strong>Avg(Level 2)</strong></td>
-                            <td class="js-sort-number"><strong>Arc(Level 2)</strong></td>
-                            <td class="js-sort-number"><strong>Edu(Level 2)</strong></td>
-                            <td class="js-sort-number"><strong>Hou(Level 2)</strong></td>
-                            <td class="js-sort-number"><strong>Soc(Level 2)</strong></td>
-                            <td class="js-sort-number"><strong>Spo(Level 2)</strong></td>
-                            <td class="js-sort-number"><strong>Tra(Level 2)</strong></td>
-                          </tr>
-                          <tr>
-                            <td>1</td>
-                            <td><b>GPT-4o 🥇</b></td>
-                            <td><a href="https://openai.com/index/hello-gpt-4o/" class="ext-link" style="font-size: 16px;">Link</a></td>
-                            <td>2024-05</td>
-                            <td><b>69.45%</b></td>
-                            <td>70.59%</td>
-                            <td>70.59%</td>
-                            <td>78.43%</td>
-                            <td>82.35%</td>
-                            <td>54.90%</td>
-                            <td>66.67%</td>
-                          </tr>
-                          <tr>
-                            <td>2</td>
-                            <td><b>GPT-4V 🥈</b></td>
-                            <td><a href="https://openai.com/contributions/gpt-4v/" class="ext-link" style="font-size: 16px;">Link</a></td>
-                            <td>2024-04</td>
-                            <td><b>62.38%</b></td>
-                            <td>72.55%</td>
-                            <td>70.59%</td>
-                            <td>74.51%</td>
-                            <td>60.78%</td>
-                            <td>45.10%</td>
-                            <td>56.86%</td>
-                          </tr>
-                          <tr>
-                            <td>3</td>
-                            <td><b>Gemini 1.5 Pro 🥉</b></td>
-                            <td><a href="https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf" class="ext-link" style="font-size: 16px;">Link</a></td>
-                            <td>2024-05</td>
-                            <td><b>55.95%</b></td>
-                            <td>52.94%</td>
-                            <td>56.86%</td>
-                            <td>54.90%</td>
-                            <td>74.51%</td>
-                            <td>43.14%</td>
-                            <td>58.82%</td>
-                          </tr>
-                          <tr>
-                            <td>4</td>
-                            <td><b>LLaVA-NeXT-110B</b></td>
-                            <td><a href="https://huggingface.co/lmms-lab/llava-next-110b" class="ext-link" style="font-size: 16px;">Link</a></td>
-                            <td>2024-05</td>
-                            <td><b>52.09%</b></td>
-                            <td>66.67%</td>
-                            <td>56.86%</td>
-                            <td>54.90%</td>
-                            <td>64.71%</td>
-                            <td>31.37%</td>
-                            <td>43.14%</td>
-                          </tr>
-                          <tr>
-                            <td>5</td>
-                            <td><b>LLaVA-NeXT-72B</b></td>
-                            <td><a href="https://huggingface.co/lmms-lab/llava-next-72b" class="ext-link" style="font-size: 16px;">Link</a></td>
-                            <td>2024-04</td>
-                            <td><b>51.13%</b></td>
-                            <td>66.67%</td>
-                            <td>54.90%</td>
-                            <td>52.94%</td>
-                            <td>60.78%</td>
-                            <td>33.33%</td>
-                            <td>43.14%</td>
-                          </tr>
-                          <tr>
-                            <td>6</td>
-                            <td><b>mPLUG-Owl2-7B</b></td>
-                            <td><a href="https://huggingface.co/MAGAer13/mplug-owl2-llama2-7b" class="ext-link" style="font-size: 16px;">Link</a></td>
-                            <td>2023-10</td>
-                            <td><b>40.51%</b></td>
-                            <td>41.18%</td>
-                            <td>41.18%</td>
-                            <td>47.06%</td>
-                            <td>39.22%</td>
-                            <td>29.41%</td>
-                            <td>49.02%</td>
-                          </tr>
-                          <tr>
-                            <td>7</td>
-                            <td><b>MiniCPM-LLaMA3-V 2.5</b></td>
-                            <td><a href="https://huggingface.co/openbmb/MiniCPM-Llama3-V-2_5" class="ext-link" style="font-size: 16px;">Link</a></td>
-                            <td>2024-05</td>
-                            <td><b>39.23%</b></td>
-                            <td>45.10%</td>
-                            <td>49.02%</td>
-                            <td>49.02%</td>
-                            <td>31.37%</td>
-                            <td>27.45%</td>
-                            <td>37.25%</td>
-                          </tr>
-                          <tr>
-                            <td>8</td>
-                            <td><b>CogVLM-chat</b></td>
-                            <td><a href="https://huggingface.co/THUDM/cogvlm-chat-hf" class="ext-link" style="font-size: 16px;">Link</a></td>
-                            <td>2023-11</td>
-                            <td><b>38.91%</b></td>
-                            <td>49.02%</td>
-                            <td>33.33%</td>
-                            <td>43.14%</td>
-                            <td>41.18%</td>
-                            <td>27.45%</td>
-                            <td>43.14%</td>
-                          </tr>
-                          <tr>
-                            <td>9</td>
-                            <td><b>DeepSeek-VL-7B</b></td>
-                            <td><a href="https://huggingface.co/deepseek-ai/deepseek-vl-7b-chat" class="ext-link" style="font-size: 16px;">Link</a></td>
-                            <td>2024-03</td>
-                            <td><b>35.69%</b></td>
-                            <td>41.18%</td>
-                            <td>33.33%</td>
-                            <td>39.22%</td>
-                            <td>41.18%</td>
-                            <td>21.57%</td>
-                            <td>41.18%</td>
-                          </tr>
-                          <tr>
-                            <td>10</td>
-                            <td><b>Phi3-Vision-4.2B</b></td>
-                            <td><a href="https://huggingface.co/microsoft/Phi-3-vision-128k-instruct" class="ext-link" style="font-size: 16px;">Link</a></td>
-                            <td>2024-05</td>
-                            <td><b>34.41%</b></td>
-                            <td>37.25%</td>
-                            <td>33.33%</td>
-                            <td>41.18%</td>
-                            <td>43.14%</td>
-                            <td>21.57%</td>
-                            <td>33.33%</td>
-                          </tr>
-                          
-                          <tr>
-                            <td>11</td>
-                            <td><b>DeepSeek-VL-1.3B</b></td>
-                            <td><a href="https://huggingface.co/deepseek-ai/deepseek-vl-1.3b-base" class="ext-link" style="font-size: 16px;">Link</a></td>
-                            <td>2024-03</td>
-                            <td><b>34.41%</b></td>
-                            <td>35.29%</td>
-                            <td>29.41%</td>
-                            <td>29.41%</td>
-                            <td>39.22%</td>
-                            <td>27.45%</td>
-                            <td>49.02%</td>
-                          </tr>
-                          <tr>
-                            <td>12</td>
-                            <td><b>CogAgent-vqa</b></td>
-                            <td><a href="https://huggingface.co/THUDM/cogagent-vqa-hf" class="ext-link" style="font-size: 16px;">Link</a></td>
-                            <td>2023-12</td>
-                            <td><b>32.80%</b></td>
-                            <td>31.37%</td>
-                            <td>35.29%</td>
-                            <td>35.29%</td>
-                            <td>37.25%</td>
-                            <td>25.49%</td>
-                            <td>35.29%</td>
-                          </tr>
-                          <tr>
-                            <td>13</td>
-                            <td><b>Qwen-VL-Plus</b></td>
-                            <td><a href="https://github.com/QwenLM/Qwen-VL/tree/master" class="ext-link" style="font-size: 16px;">Link</a></td>
-                            <td>2024-01</td>
-                            <td><b>30.55%</b></td>
-                            <td>35.29%</td>
-                            <td>41.18%</td>
-                            <td>37.25%</td>
-                            <td>25.49%</td>
-                            <td>23.53%</td>
-                            <td>23.53%</td>
-                          </tr>
-                          <tr>
-                            <td>14</td>
-                            <td><b>LLaVA-NeXT-7B</b></td>
-                            <td><a href="https://huggingface.co/liuhaotian/llava-v1.6-vicuna-7b" class="ext-link" style="font-size: 16px;">Link</a></td>
-                            <td>2024-03</td>
-                            <td><b>24.12%</b></td>
-                            <td>35.29%</td>
-                            <td>13.73%</td>
-                            <td>37.25%</td>
-                            <td>23.53%</td>
-                            <td>9.80%</td>
-                            <td>27.45%</td>
-                          </tr>
+                      <tr>
+                        <td class="js-sort-number"><strong>#</strong></td>
+                        <td class="js-sort"><strong>Model</strong></td>
+                        <td class="js-sort"><strong>Source</strong></td>
+                        <td class="js-sort-date"><strong>Date</strong></td>
+                        <td class="js-sort-number"><strong>Avg(Level 2)</strong></td>
+                        <td class="js-sort-number"><strong>Arc(Level 2)</strong></td>
+                        <td class="js-sort-number"><strong>Edu(Level 2)</strong></td>
+                        <td class="js-sort-number"><strong>Hou(Level 2)</strong></td>
+                        <td class="js-sort-number"><strong>Soc(Level 2)</strong></td>
+                        <td class="js-sort-number"><strong>Spo(Level 2)</strong></td>
+                        <td class="js-sort-number"><strong>Tra(Level 2)</strong></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td class="close-source"><b>GPT-4o 🥇</b></td>
+                        <td><a href="https://openai.com/index/hello-gpt-4o/" class="ext-link" style="font-size: 16px;">Link</a></td>
+                        <td>2024-05</td>
+                        <td><b>69.45%</b></td>
+                        <td>70.59%</td>
+                        <td>70.59%</td>
+                        <td>78.43%</td>
+                        <td>82.35%</td>
+                        <td>54.90%</td>
+                        <td>66.67%</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td class="close-source"><b>GPT-4V 🥈</b></td>
+                        <td><a href="https://openai.com/contributions/gpt-4v/" class="ext-link" style="font-size: 16px;">Link</a></td>
+                        <td>2024-04</td>
+                        <td><b>62.38%</b></td>
+                        <td>72.55%</td>
+                        <td>70.59%</td>
+                        <td>74.51%</td>
+                        <td>60.78%</td>
+                        <td>45.10%</td>
+                        <td>56.86%</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td class="close-source"><b>Gemini 1.5 Pro 🥉</b></td>
+                        <td><a href="https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf" class="ext-link" style="font-size: 16px;">Link</a></td>
+                        <td>2024-05</td>
+                        <td><b>55.95%</b></td>
+                        <td>52.94%</td>
+                        <td>56.86%</td>
+                        <td>54.90%</td>
+                        <td>74.51%</td>
+                        <td>43.14%</td>
+                        <td>58.82%</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td class="open-source"><b>LLaVA-NeXT-110B</b></td>
+                        <td><a href="https://huggingface.co/lmms-lab/llava-next-110b" class="ext-link" style="font-size: 16px;">Link</a></td>
+                        <td>2024-05</td>
+                        <td><b>52.09%</b></td>
+                        <td>66.67%</td>
+                        <td>56.86%</td>
+                        <td>54.90%</td>
+                        <td>64.71%</td>
+                        <td>31.37%</td>
+                        <td>43.14%</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td class="open-source"><b>LLaVA-NeXT-72B</b></td>
+                        <td><a href="https://huggingface.co/lmms-lab/llava-next-72b" class="ext-link" style="font-size: 16px;">Link</a></td>
+                        <td>2024-04</td>
+                        <td><b>51.13%</b></td>
+                        <td>66.67%</td>
+                        <td>54.90%</td>
+                        <td>52.94%</td>
+                        <td>60.78%</td>
+                        <td>33.33%</td>
+                        <td>43.14%</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td class="open-source"><b>mPLUG-Owl2-7B</b></td>
+                        <td><a href="https://huggingface.co/MAGAer13/mplug-owl2-llama2-7b" class="ext-link" style="font-size: 16px;">Link</a></td>
+                        <td>2023-10</td>
+                        <td><b>40.51%</b></td>
+                        <td>41.18%</td>
+                        <td>41.18%</td>
+                        <td>47.06%</td>
+                        <td>39.22%</td>
+                        <td>29.41%</td>
+                        <td>49.02%</td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td class="open-source"><b>MiniCPM-LLaMA3-V 2.5</b></td>
+                        <td><a href="https://huggingface.co/openbmb/MiniCPM-Llama3-V-2_5" class="ext-link" style="font-size: 16px;">Link</a></td>
+                        <td>2024-05</td>
+                        <td><b>39.23%</b></td>
+                        <td>45.10%</td>
+                        <td>49.02%</td>
+                        <td>49.02%</td>
+                        <td>31.37%</td>
+                        <td>27.45%</td>
+                        <td>37.25%</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td class="open-source"><b>CogVLM-chat</b></td>
+                        <td><a href="https://huggingface.co/THUDM/cogvlm-chat-hf" class="ext-link" style="font-size: 16px;">Link</a></td>
+                        <td>2023-11</td>
+                        <td><b>38.91%</b></td>
+                        <td>49.02%</td>
+                        <td>33.33%</td>
+                        <td>43.14%</td>
+                        <td>41.18%</td>
+                        <td>27.45%</td>
+                        <td>43.14%</td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td class="open-source"><b>DeepSeek-VL-7B</b></td>
+                        <td><a href="https://huggingface.co/deepseek-ai/deepseek-vl-7b-chat" class="ext-link" style="font-size: 16px;">Link</a></td>
+                        <td>2024-03</td>
+                        <td><b>35.69%</b></td>
+                        <td>41.18%</td>
+                        <td>33.33%</td>
+                        <td>39.22%</td>
+                        <td>41.18%</td>
+                        <td>21.57%</td>
+                        <td>41.18%</td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td class="open-source"><b>Phi3-Vision-4.2B</b></td>
+                        <td><a href="https://huggingface.co/microsoft/Phi-3-vision-128k-instruct" class="ext-link" style="font-size: 16px;">Link</a></td>
+                        <td>2024-05</td>
+                        <td><b>34.41%</b></td>
+                        <td>37.25%</td>
+                        <td>33.33%</td>
+                        <td>41.18%</td>
+                        <td>43.14%</td>
+                        <td>21.57%</td>
+                        <td>33.33%</td>
+                      </tr>
+                      <tr>
+                        <td>11</td>
+                        <td class="open-source"><b>DeepSeek-VL-1.3B</b></td>
+                        <td><a href="https://huggingface.co/deepseek-ai/deepseek-vl-1.3b-base" class="ext-link" style="font-size: 16px;">Link</a></td>
+                        <td>2024-03</td>
+                        <td><b>34.41%</b></td>
+                        <td>35.29%</td>
+                        <td>29.41%</td>
+                        <td>29.41%</td>
+                        <td>39.22%</td>
+                        <td>27.45%</td>
+                        <td>49.02%</td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td class="open-source"><b>CogAgent-vqa</b></td>
+                        <td><a href="https://huggingface.co/THUDM/cogagent-vqa-hf" class="ext-link" style="font-size: 16px;">Link</a></td>
+                        <td>2023-12</td>
+                        <td><b>32.80%</b></td>
+                        <td>31.37%</td>
+                        <td>35.29%</td>
+                        <td>35.29%</td>
+                        <td>37.25%</td>
+                        <td>25.49%</td>
+                        <td>35.29%</td>
+                      </tr>
+                      <tr>
+                        <td>13</td>
+                        <td class="close-source"><b>Qwen-VL-Plus</b></td>
+                        <td><a href="https://github.com/QwenLM/Qwen-VL/tree/master" class="ext-link" style="font-size: 16px;">Link</a></td>
+                        <td>2024-01</td>
+                        <td><b>30.55%</b></td>
+                        <td>35.29%</td>
+                        <td>41.18%</td>
+                        <td>37.25%</td>
+                        <td>25.49%</td>
+                        <td>23.53%</td>
+                        <td>23.53%</td>
+                      </tr>
+                      <tr>
+                        <td>14</td>
+                        <td class="open-source"><b>LLaVA-NeXT-7B</b></td>
+                        <td><a href="https://huggingface.co/liuhaotian/llava-v1.6-vicuna-7b" class="ext-link" style="font-size: 16px;">Link</a></td>
+                        <td>2024-03</td>
+                        <td><b>24.12%</b></td>
+                        <td>35.29%</td>
+                        <td>13.73%</td>
+                        <td>37.25%</td>
+                        <td>23.53%</td>
+                        <td>9.80%</td>
+                        <td>27.45%</td>
+                      </tr>
                     </table>
                     <div>
                       <p>🚨 To submit your results to the leaderboard, please send to <a href="mailto:zhangyifan_ai@bupt.edu.cn">this email</a> with your result json files.</p>

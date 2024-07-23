@@ -2,10 +2,10 @@
 function changeButtonText() {
     var button = document.getElementById('toggleButton');
     //change display content
-    if (button.innerHTML.includes("Level 1 Evaluation Leaderboard")) {
+    if (button.innerHTML.includes("Level 1 Accuracy Leaderboard")) {
       button.innerHTML = "<b style='font-size: larger;'>Level 2 Accuracy Leaderboard</b> (Click to Switch)";
     } else {
-      button.innerHTML = "<b style='font-size: larger;'>Level 1 Evaluation Leaderboard</b> (Click to Switch)";
+      button.innerHTML = "<b style='font-size: larger;'>Level 1 Accuracy Leaderboard</b> (Click to Switch)";
     }
 }
 
